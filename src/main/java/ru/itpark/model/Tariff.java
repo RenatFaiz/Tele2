@@ -7,7 +7,7 @@ public class Tariff {
     private boolean withoutPayment;
     private String name;
     private String internet;
-    boolean SMMbadge;
+    boolean smmBadge;
     private int minutes;
     private boolean unlimitedOnTele2;
     private int SMS;
@@ -37,8 +37,8 @@ public class Tariff {
         this.withoutPayment = withoutPayment;
     }
 
-    public void setSMMbadge(boolean SMMbadge) {
-        this.SMMbadge = SMMbadge;
+    public void setSmmBadge(boolean smmBadge) {
+        this.smmBadge = smmBadge;
     }
 
     public void setUnlimitedOnTele2(boolean unlimitedOnTele2) {
@@ -55,7 +55,7 @@ public class Tariff {
 
     public void print() {
         System.out.println(name + " " + internet + " " + minutes + " мин. "
-                + buyButton + "\nБезлимитные соцсети: " + SMMbadge
+                + buyButton + "\nБезлимитные соцсети: " + smmBadge
                 + "; безлимит на Tele2 России: " + unlimitedOnTele2);
         if (monthlyPrice > 0) {
             System.out.println(monthlyPrice + " Р/месяц\n");

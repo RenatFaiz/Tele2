@@ -8,7 +8,7 @@ public class Main {
         Tariff myOnline = new Tariff("Мой онлайн","15 ГБ",
                 400, "https://tele2.ru/shop/1");
         myOnline.setMonthlyPrice(290);
-        myOnline.setSMMbadge(true);
+        myOnline.setSmmBadge(true);
         myOnline.setUnlimitedOnTele2(true);
         myOnline.setConfigure(true);
         myOnline.print();
